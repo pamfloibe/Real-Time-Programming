@@ -7,6 +7,7 @@ When answering the questions, remember to use all the resources at your disposal
 
  ### What is concurrency? What is parallelism? What's the difference?
  > *Parallelism: A process in which at least two threads are being executed simultaneusly.*
+
  > *Concurrency: A process in which two threads are being executed in overlapping time periods.*
 
  > *The difference between concurrency and parallelism is that concurrency manages access to shared state from different threads, like multitasking on a single-core machine, and parallelism uses multiple processors in order to improve the performance of a computation.*
@@ -24,8 +25,11 @@ When answering the questions, remember to use all the resources at your disposal
  
  ### What are the differences between processes, threads, green threads, and coroutines?
  > *Processes: They are OS-managed. A process is the instance of a computer program that is being executed. It may be made up of multiple threads in order to execute instructions concurrently.*
- > *Threads: They are OS-managed. THey are the smallest sequence of programmed instructions that can be managed independently.*
+
+ > *Threads: They are OS-managed. They are the smallest sequence of programmed instructions that can be managed independently.*
+
  > *Green threads: They are NOT OS-managed as they are used by a virtual machine instead of the operating system itself.*
+
  > *Coroutines: They are NOT OS-managed. They are computer-program components that generalize subroutines for non-preemptive multitasking, as they allow multiple entry points for suspending and resuming execution at certain locations.*
 
  ### Which one of these do `pthread_create()` (C/POSIX), `threading.Thread()` (Python), `go` (Go) create?
